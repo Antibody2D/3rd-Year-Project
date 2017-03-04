@@ -1,11 +1,11 @@
 # 3rd-Year-Project
-JourneyToCenterOfMyHeadache
+Antibody
   
   Sean
     Brian
       Joe
 
-This is our repository for our 3rd Year Games Project 'Journey To The Center Of My Headache'
+This is our repository for our 3rd Year Games Project & our Games Fleadh entry 'Antibody'
 
 If making edits you can create a branch off the Master File, before making a commit to the master file please make a pull request and have a member of the team review your code and differences before the merge with master is made. 
 
