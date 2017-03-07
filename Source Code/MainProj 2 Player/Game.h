@@ -124,6 +124,8 @@ public:
 	int activeEnemyVirusSmall;
 	int activeEnemyBoss;
 
+	void gameTimer();
+
 	enum levels { MENU, LEVEL_1, LEVEL_2, LEVEL_3, PAUSE };
 
 	void setRotatingAngle();	// 2017/02/22 Moved here. Set the angle for rotating objects
@@ -187,7 +189,7 @@ public:
 	void render();
 	void renderGamePlay();									// 2017-01-09 JOE: Render the game objects to the screen
 	void renderGameOver();									// 2017/03/02 JOE: Render the game objects for Game Over state
-	void renderTimer(unsigned int &timer);					// 2017/03/02 JOE: Separate the game timer to its own function
+	//void renderTimer(unsigned int &timer);					// 2017/03/02 JOE: Separate the game timer to its own function
 	//void renderTimer();					// 2017/03/02 JOE: Separate the game timer to its own function
 	void moveGameObjects();									// 2017-01-09 JOE: Move the game objects on the screen
 	void destroyGameObjects();								// 2017-01-09 JOE: Destroy the game objects when finished on the screen
@@ -199,7 +201,7 @@ public:
 	void musicTrackBackward();
 	void identifyTrack(int songName);						// 2017/02/17 Identify the song playing
 
-	void spawnRandom(int &x, int &y, int &randomSpeed, int xMuliplier = 0, int yPadding = 80, int speed = 1);
+	void spawnRandomAttributes(int &x, int &y, int &randomSpeed, int xMuliplier = 0, int yPadding = 80, int speed = 1);
 
 	int getNumPlayers() { return mNumPlayers; }
 	void setNumPlayers(int n) { mNumPlayers = n; }
